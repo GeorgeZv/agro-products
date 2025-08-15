@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastercop: Un Análisis Estratégico de Mercado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .kpi-value {
+            font-size: 3rem;
+            line-height: 1;
+            font-weight: 700;
+            color: #FF4E50;
+        }
+        .flowchart-step {
+            border: 2px solid #FC913A;
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            font-weight: 600;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        .flowchart-arrow {
+            font-size: 2rem;
+            color: #FC913A;
+            align-self: center;
+        }
+    </style>
+</head>
+<body class="text-gray-700">
+
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-6 py-4">
+            <h1 class="text-3xl font-bold text-gray-800">Inteligencia de Mercado de Mastercop®</h1>
+            <p class="text-lg text-gray-600">Visualizando la Ventaja Estratégica de un Fungicida de Última Generación</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6 md:p-8">
+        <section id="introduction" class="mb-12">
+            <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+                <h2 class="text-2xl font-bold mb-4 text-[#FF4E50]">La Diferencia Mastercop: Más Allá del Cobre Tradicional</h2>
+                <p class="max-w-3xl mx-auto text-lg">Mastercop, impulsado por la tecnología patentada BioRetain™ de Adama, redefine la protección de cultivos a base de cobre. Ofrece una formulación líquida 100% soluble y sin residuos que proporciona una eficacia superior con una huella ambiental reducida, posicionándolo perfectamente para las demandas de la agricultura moderna y de alto valor.</p>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="lg:col-span-3 bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-bold mb-4 text-center">Trayectoria del Mercado Global de Fungicidas</h3>
+                <p class="text-center mb-4">El mercado global de fungicidas está en una senda de crecimiento constante, impulsado por la creciente demanda de alimentos y las presiones relacionadas con el clima. Mastercop está posicionado para captar valor dentro de este sector en expansión, especialmente en segmentos de alto crecimiento.</p>
+                <div class="chart-container h-80 md:h-96">
+                    <canvas id="globalMarketChart"></canvas>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center justify-center">
+                <h3 class="text-xl font-bold mb-4">Impacto Ambiental Reducido</h3>
+                <p class="text-center mb-4">La tecnología BioRetain™ logra resultados superiores con significativamente menos cobre metálico en comparación con las alternativas convencionales.</p>
+                <div class="text-center">
+                    <span class="kpi-value">15%</span>
+                    <p class="text-lg font-semibold">Menos Cobre Metálico</p>
+                    <p class="text-sm">Reduce la carga del suelo y mejora la sostenibilidad.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-bold mb-4 text-center">Dominio de Formulación</h3>
+                <p class="text-center mb-4">El mercado prefiere abrumadoramente las formulaciones líquidas por su facilidad de uso. La forma líquida 100% soluble de Mastercop elimina problemas comunes como residuos en el tanque y la obstrucción de boquillas.</p>
+                <div class="chart-container h-64">
+                    <canvas id="formulationChart"></canvas>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                 <h3 class="text-xl font-bold mb-4 text-center">Segmento de Mayor Crecimiento</h3>
+                <p class="text-center mb-4">El perfil sin residuos de Mastercop y su listado OMRI lo hacen ideal para el segmento de frutas y verduras, que es el área de aplicación de más rápido crecimiento en el mercado de fungicidas.</p>
+                <div class="text-center mt-8">
+                     <span class="text-6xl">🍓🥑🍅</span>
+                     <p class="text-xl font-bold mt-4">Frutas y Verduras</p>
+                     <p>Impulsando la expansión del mercado y exigiendo insumos sostenibles y de alta calidad.</p>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-bold mb-4 text-center">Ventaja Competitiva: Mastercop vs. Cobres Tradicionales</h3>
+                <p class="text-center mb-4">Mastercop supera a los fungicidas de cobre tradicionales como Kocide y Nordox en métricas clave cruciales para los agricultores modernos, justificando su posición como una solución premium y de alto valor.</p>
+                <div class="chart-container h-96">
+                    <canvas id="competitiveRadarChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-3 bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-bold mb-4 text-center">El Rol Estratégico en el Manejo de la Resistencia</h3>
+                <p class="text-center mb-4 max-w-4xl mx-auto">La resistencia a los fungicidas es una amenaza importante para la salud de los cultivos. Los fungicidas de un solo sitio son altamente susceptibles, mientras que la acción multi-sitio de Mastercop proporciona una protección duradera. Es un socio esencial en los programas de Manejo Integrado de Plagas (MIP) para preservar la eficacia de otras herramientas.</p>
+                <div class="flex flex-col md:flex-row justify-center items-stretch gap-6 mt-6">
+                    <div class="border-2 border-red-300 bg-red-50 p-4 rounded-lg flex-1">
+                        <h4 class="font-bold text-lg text-red-600">Fungicidas de un Solo Sitio (ej. Estrobilurinas)</h4>
+                        <p><strong class="text-red-500">Alto Riesgo</strong> de desarrollo de resistencia.</p>
+                        <p>Ataca una vía metabólica específica.</p>
+                    </div>
+                    <div class="border-2 border-green-300 bg-green-50 p-4 rounded-lg flex-1">
+                        <h4 class="font-bold text-lg text-green-600">Mastercop (Acción Multi-Sitio)</h4>
+                        <p><strong class="text-green-500">Bajo Riesgo</strong> de desarrollo de resistencia.</p>
+                        <p>Ataca a los patógenos en múltiples puntos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-bold mb-4 text-center">Navegando por el Panorama Regulador de México</h3>
+                <p class="text-center mb-4">Obtener la aprobación de plaguicidas en México es un proceso de múltiples etapas que involucra la coordinación entre tres agencias federales distintas. El registro de "Exportación Exclusiva" de Mastercop es un éxito estratégico, apuntando al segmento de mercado más valioso.</p>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-4 mt-6">
+                    <div class="flowchart-step">COFEPRIS<br><span class="text-sm font-normal">(Salud y Seguridad)</span></div>
+                    <div class="flowchart-arrow">→</div>
+                    <div class="flowchart-step">SEMARNAT<br><span class="text-sm font-normal">(Medio Ambiente)</span></div>
+                    <div class="flowchart-arrow">→</div>
+                    <div class="flowchart-step">SADER<br><span class="text-sm font-normal">(Agricultura)</span></div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-3 bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-bold mb-4 text-center text-[#FF4E50]">Recomendaciones Estratégicas para el Crecimiento</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
+                    <div class="text-center">
+                        <div class="text-5xl mb-3">🎯</div>
+                        <h4 class="font-bold text-lg">Enfocarse en Productores de Exportación</h4>
+                        <p>Aprovechar el registro de "Exportación Exclusiva" para apuntar a productores de cultivos de alto valor como aguacates y tomates que deben cumplir con estrictos Límites Máximos de Residuos (LMRs) internacionales.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-5xl mb-3">🌿</div>
+                        <h4 class="font-bold text-lg">Promover la Certificación OMRI</h4>
+                        <p>Captar el segmento de agricultura orgánica y sostenible de rápido crecimiento destacando el estado de OMRI Listed®, uniendo la eficacia química con los principios biológicos.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-5xl mb-3">🔄</div>
+                        <h4 class="font-bold text-lg">Posicionar como una Herramienta de MIP</h4>
+                        <p>Educar a los agricultores sobre el manejo de la resistencia, posicionando a Mastercop no solo como un fungicida, sino como una inversión a largo plazo en la salud y sostenibilidad de los cultivos.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-6 py-4 text-center">
+            <p>Esta infografía se basa en un análisis experto del fungicida Mastercop de Adama. Los datos se sintetizan a partir de informes de mercado públicos y fichas técnicas.</p>
+        </div>
+    </footer>
+
+    <script>
+        const energeticPalette = {
+            red: '#FF4E50',
+            orange: '#FC913A',
+            yellow: '#F9D423',
+            lightGreen: '#EDE574',
+            paleGreen: '#E1F5C4',
+            gray: '#6B7280'
+        };
+
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+        
+        const commonChartOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        font: {
+                            size: 14,
+                            family: 'Inter'
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        title: tooltipTitleCallback
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        font: {
+                            family: 'Inter'
+                        }
+                    }
+                },
+                x: {
+                    ticks: {
+                        font: {
+                            family: 'Inter'
+                        }
+                    }
+                }
+            }
+        };
+
+        function wrapLabel(label, maxLength = 16) {
+            if (label.length <= maxLength) {
+                return label;
+            }
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            for (const word of words) {
+                if ((currentLine + word).length > maxLength) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            }
+            lines.push(currentLine.trim());
+            return lines.filter(line => line.length > 0);
+        }
+
+        const globalMarketCtx = document.getElementById('globalMarketChart').getContext('2d');
+        new Chart(globalMarketCtx, {
+            type: 'line',
+            data: {
+                labels: ['2024', '2025', '2026', '2027', '2028', '2029', '2030'],
+                datasets: [{
+                    label: 'Valor de Mercado Proyectado (Miles de Millones de USD)',
+                    data: [20.0, 21.1, 22.26, 23.48, 24.77, 26.13, 27.56],
+                    borderColor: energeticPalette.red,
+                    backgroundColor: 'rgba(255, 78, 80, 0.2)',
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: { ...commonChartOptions }
+        });
+
+        const formulationCtx = document.getElementById('formulationChart').getContext('2d');
+        new Chart(formulationCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Formulaciones Líquidas', 'Formulaciones Secas (Polvos/Gránulos)'],
+                datasets: [{
+                    label: 'Cuota de Mercado por Formulación',
+                    data: [75, 25],
+                    backgroundColor: [energeticPalette.orange, energeticPalette.yellow],
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+
+        const competitiveRadarCtx = document.getElementById('competitiveRadarChart').getContext('2d');
+        const radarLabels = [
+            'Seguridad del Cultivo (Baja Fitotoxicidad)',
+            'Facilidad de Uso (Solubilidad)',
+            'Sin Residuos Visibles',
+            'Manejo de la Resistencia (Multi-Sitio)',
+            'Resistencia a la Lluvia y Adhesión',
+            'Certificado Orgánico (OMRI)'
+        ].map(label => wrapLabel(label));
+
+        new Chart(competitiveRadarCtx, {
+            type: 'radar',
+            data: {
+                labels: radarLabels,
+                datasets: [{
+                    label: 'Mastercop',
+                    data: [9, 10, 10, 9, 8, 10],
+                    borderColor: energeticPalette.red,
+                    backgroundColor: 'rgba(255, 78, 80, 0.2)',
+                    fill: true
+                }, {
+                    label: 'Cobres Tradicionales',
+                    data: [6, 4, 3, 9, 6, 2],
+                    borderColor: energeticPalette.gray,
+                    backgroundColor: 'rgba(107, 114, 128, 0.2)',
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    }
+                },
+                scales: {
+                    r: {
+                        angleLines: {
+                            display: false
+                        },
+                        suggestedMin: 0,
+                        suggestedMax: 10,
+                        pointLabels: {
+                            font: {
+                                size: 12,
+                                family: 'Inter'
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

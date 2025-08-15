@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis Comparativo de Fungicidas Cúpricos: Mastercop vs. Competencia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .kpi-value {
+            font-weight: 900;
+            color: #CC333F;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-[#00A0B0] text-white text-center p-8 shadow-lg">
+        <h1 class="text-4xl md:text-5xl font-bold mb-2">Revolucionando la Protección de Cultivos en México</h1>
+        <p class="text-xl md:text-2xl font-light">Análisis Comparativo: Mastercop vs. Fungicidas Cúpricos Tradicionales</p>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+        
+        <section class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-[#6A4A3C] mb-4">El Desafío del Cobre en la Agricultura Moderna</h2>
+            <p class="max-w-3xl mx-auto text-lg">Los fungicidas a base de cobre son esenciales, pero las formulaciones tradicionales presentan desafíos: altas dosis, baja persistencia y dificultades de manejo. La innovación es clave para una agricultura más eficiente y sostenible. Mastercop de ADAMA introduce una tecnología superior para enfrentar estos retos.</p>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <div class="card p-6 text-center">
+                <h3 class="text-xl font-semibold text-[#00A0B0] mb-2">Formulación Avanzada</h3>
+                <p class="kpi-value text-5xl mb-2">Solución</p>
+                <p class="text-gray-600">A diferencia de los polvos mojables, Mastercop es una "solución verdadera" que no tapa boquillas y se mezcla sin esfuerzo, optimizando el tiempo y la aplicación.</p>
+            </div>
+            <div class="card p-6 text-center">
+                <h3 class="text-xl font-semibold text-[#00A0B0] mb-2">Biodisponibilidad Superior</h3>
+                <div class="chart-container" style="height: 200px; max-height: 200px;">
+                    <canvas id="bioavailabilityChart"></canvas>
+                </div>
+                <p class="text-gray-600 mt-4">La tecnología BioRetain asegura que el 98% del cobre esté disponible para proteger la planta de forma inmediata y efectiva.</p>
+            </div>
+            <div class="card p-6 text-center">
+                <h3 class="text-xl font-semibold text-[#00A0B0] mb-2">Protección Inteligente</h3>
+                <p class="kpi-value text-5xl mb-2">Subcuticular</p>
+                <p class="text-gray-600">Mastercop penetra la cutícula de la hoja, ofreciendo una protección sistémica local que resiste el lavado por lluvia, a diferencia de los productos de solo contacto.</p>
+            </div>
+        </div>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center text-[#6A4A3C] mb-6">Comparativa de Formulaciones en el Mercado</h2>
+            <p class="text-center max-w-3xl mx-auto text-lg mb-8">La eficacia de un fungicida cúprico no solo depende del ingrediente activo, sino de cómo se formula y se entrega a la planta. Aquí se comparan las características clave de Mastercop frente a sus competidores directos en México.</p>
+            <div class="card overflow-x-auto p-6">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-[#EB6841] text-white">
+                            <th class="p-4 font-semibold">Atributo Clave</th>
+                            <th class="p-4 font-semibold">Mastercop (ADAMA)</th>
+                            <th class="p-4 font-semibold">Bio Cobre / BIOCOPPER</th>
+                            <th class="p-4 font-semibold">Cupravit (Bayer)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y">
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-bold text-[#6A4A3C]">Ingrediente Activo</td>
+                            <td class="p-4">Sulfato de Cobre Pentahidratado</td>
+                            <td class="p-4">Hidróxido de Cobre / Óxido Cuproso</td>
+                            <td class="p-4">Oxicloruro de Cobre / Hidróxido Cúprico</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-bold text-[#6A4A3C]">Formulación</td>
+                            <td class="p-4 font-semibold text-green-600">Solución Acuosa (SL)</td>
+                            <td class="p-4">Gránulos Dispersables</td>
+                            <td class="p-4 text-red-600">Polvo Mojable (WP)</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-bold text-[#6A4A3C]">Tecnología Diferencial</td>
+                            <td class="p-4 font-semibold text-green-600">BioRetain (98% biodisponible)</td>
+                            <td class="p-4">Enfoque en agricultura orgánica</td>
+                            <td class="p-4">Formulación tradicional</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-bold text-[#6A4A3C]">Modo de Acción</td>
+                            <td class="p-4 font-semibold text-green-600">Contacto y Subcuticular</td>
+                            <td class="p-4">Contacto (escudo protector)</td>
+                            <td class="p-4">Contacto</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-bold text-[#6A4A3C]">Facilidad de Manejo</td>
+                            <td class="p-4 font-semibold text-green-600">Excelente, sin taponamientos</td>
+                            <td class="p-4">Buena suspensibilidad</td>
+                            <td class="p-4 text-red-600">Riesgo de grumos y sedimentación</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 items-center">
+            <div class="card p-6">
+                <h3 class="text-2xl font-bold text-[#6A4A3C] mb-4">Eficiencia en Dosis: Menos es Más</h3>
+                <p class="mb-4">La alta biodisponibilidad de Mastercop permite lograr un control superior con una menor cantidad de producto por hectárea. Esto no solo representa un ahorro, sino que también reduce el impacto ambiental al disminuir la carga de cobre en el suelo.</p>
+                <p>La gráfica muestra una comparación de las dosis recomendadas para el control del Tizón Tardío en jitomate, un cultivo clave en México. Mastercop demuestra una eficiencia notable.</p>
+            </div>
+            <div class="card p-6">
+                 <h3 class="text-xl font-semibold text-center text-[#00A0B0] mb-4">Dosis Recomendada para Tizón Tardío en Jitomate (kg o L / ha)</h3>
+                <div class="chart-container">
+                    <canvas id="doseChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center text-[#6A4A3C] mb-6">El Proceso de Protección de Mastercop</h2>
+            <p class="text-center max-w-3xl mx-auto text-lg mb-8">La acción subcuticular es la ventaja estratégica que asegura una protección duradera. A diferencia de otros cobres que permanecen en la superficie, Mastercop trabaja desde adentro hacia afuera.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                <div class="flex flex-col items-center">
+                    <div class="card p-6 w-full h-full flex flex-col justify-center">
+                        <div class="text-4xl mb-4 text-[#EB6841]">①</div>
+                        <h4 class="text-xl font-semibold mb-2">Aplicación y Cobertura</h4>
+                        <p>La solución se distribuye uniformemente sobre la superficie de la hoja gracias a sus partículas finas.</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center text-4xl text-[#00A0B0] font-bold my-4 md:my-0">→</div>
+                <div class="flex flex-col items-center">
+                     <div class="card p-6 w-full h-full flex flex-col justify-center">
+                        <div class="text-4xl mb-4 text-[#EB6841]">②</div>
+                        <h4 class="text-xl font-semibold mb-2">Penetración Subcuticular</h4>
+                        <p>El cobre penetra la cutícula, creando un reservorio de protección dentro de la hoja.</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center justify-center text-4xl text-[#00A0B0] font-bold my-4 md:my-0">→</div>
+                 <div class="flex md:hidden items-center justify-center text-4xl text-[#00A0B0] font-bold my-4 transform rotate-90">→</div>
+                <div class="flex flex-col items-center">
+                    <div class="card p-6 w-full h-full flex flex-col justify-center">
+                        <div class="text-4xl mb-4 text-[#EB6841]">③</div>
+                        <h4 class="text-xl font-semibold mb-2">Protección Residual</h4>
+                        <p>Esta acción sistémica local protege a la planta por más tiempo y es resistente al lavado por lluvia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center">
+            <h2 class="text-3xl font-bold text-[#6A4A3C] mb-4">Conclusión: La Elección Inteligente para el Agricultor Mexicano</h2>
+            <p class="max-w-3xl mx-auto text-lg">Mastercop no es solo otro fungicida de cobre; es una herramienta tecnológica que ofrece eficiencia, sostenibilidad y facilidad de uso. Su formulación avanzada y modo de acción único lo posicionan como la opción superior para los agricultores que buscan maximizar la protección de sus cultivos y optimizar sus operaciones.</p>
+        </section>
+
+    </main>
+
+    <footer class="bg-[#6A4A3C] text-white text-center p-4 mt-12">
+        <p>&copy; 2025 Análisis de Mercado Agrícola. Infografía generada con base en datos técnicos disponibles públicamente.</p>
+    </footer>
+
+    <script>
+        function wrapLabels(label) {
+            const maxLineLength = 16;
+            if (typeof label !== 'string' || label.length <= maxLineLength) {
+                return label;
+            }
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            words.forEach(word => {
+                if ((currentLine + ' ' + word).trim().length > maxLineLength) {
+                    lines.push(currentLine.trim());
+                    currentLine = word;
+                } else {
+                    currentLine = (currentLine + ' ' + word).trim();
+                }
+            });
+            if (currentLine) {
+                lines.push(currentLine.trim());
+            }
+            return lines;
+        }
+
+        const tooltipTitleCallback = function(tooltipItems) {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            } else {
+                return label;
+            }
+        };
+        
+        const bioavailabilityCtx = document.getElementById('bioavailabilityChart').getContext('2d');
+        new Chart(bioavailabilityCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Cobre Biodisponible', 'No Disponible'],
+                datasets: [{
+                    data: [98, 2],
+                    backgroundColor: ['#00A0B0', '#e0e0e0'],
+                    borderColor: ['#ffffff', '#ffffff'],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                cutout: '70%',
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        enabled: false
+                    }
+                },
+                animation: {
+                    onComplete: function() {
+                        const chart = this;
+                        const ctx = chart.ctx;
+                        ctx.textAlign = 'center';
+                        ctx.textBaseline = 'middle';
+                        const centerX = (chart.chartArea.left + chart.chartArea.right) / 2;
+                        const centerY = (chart.chartArea.top + chart.chartArea.bottom) / 2;
+                        ctx.font = "bold 32px Inter";
+                        ctx.fillStyle = "#CC333F";
+                        ctx.fillText('98%', centerX, centerY);
+                    }
+                }
+            }
+        });
+
+        const doseCtx = document.getElementById('doseChart').getContext('2d');
+        const rawDoseLabels = ['Mastercop (L/ha)', 'Bio Cobre (kg/ha)', 'Cupravit (kg/ha)'];
+        const wrappedDoseLabels = rawDoseLabels.map(wrapLabels);
+        
+        new Chart(doseCtx, {
+            type: 'bar',
+            data: {
+                labels: wrappedDoseLabels,
+                datasets: [{
+                    label: 'Dosis (kg o L por hectárea)',
+                    data: [1.5, 4, 3.0], 
+                    backgroundColor: ['#00A0B0', '#EB6841', '#EDC951'],
+                    borderColor: ['#00A0B0', '#EB6841', '#EDC951'],
+                    borderWidth: 1,
+                    borderRadius: 5
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                indexAxis: 'y',
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Dosis (kg o L / ha)',
+                            font: { size: 14, weight: '600' }
+                        }
+                    },
+                    y: {
+                        ticks: {
+                            font: { size: 14 }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
